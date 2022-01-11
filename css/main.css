@@ -452,10 +452,16 @@ header .web-map li a:hover {
     font-size: 18px;
 }
 .menu  section .item span {
+    min-width: 30px;
     font-size: 16px;
     font-weight: bold;
     padding-left: 10px;
     position: relative;
+}
+.menu  section .item > span:last-of-type::after {
+    content: 'ريال';
+    position: absolute;
+    right: -50px;
 }
 .menu section .item:nth-child(1) > span::before {
     content: 'السعر';
@@ -644,6 +650,11 @@ header .web-map li a:hover {
     justify-content: space-between;
     position: relative;
 }
+.section-4 .item > .prices::after {
+    content: 'ريال';
+    position: absolute;
+    right: -50px;
+}
 .section-4 .item:nth-child(1) .prices::before {
     content: 'السعر';
     position: absolute;
@@ -769,6 +780,11 @@ header .web-map li a:hover {
     display: flex;
     justify-content: space-evenly;
     position: relative;
+}
+.section-6 .item > .prices::after {
+    content: 'ريال';
+    position: absolute;
+    right: -50px;
 }
 .section-6 .item .prices.one-size {
     justify-content: center;
